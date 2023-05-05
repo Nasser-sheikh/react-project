@@ -66,16 +66,22 @@ const Header = () => {
         </ul>
       </header>
       <header className="show-when-mobile">
-        <h1>Courses 4 Arab</h1>
+        <Link to="/">
+          <h1>Courses 4 Arab</h1>
+        </Link>
         <label className="absolute" htmlFor="burger">
           <i className="fas fa-bars" />
         </label>
         <input id="burger" type="checkbox" />
         <div className="show-on-click">
           <div className="main-div">
-            <label htmlFor="html">
-              HTML <i className="fas fa-plus" />
-            </label>
+            <NavLink to="/html">
+              {" "}
+              <label htmlFor="html">
+                HTML <i className="fas fa-plus" />
+              </label>
+            </NavLink>
+
             <input id="html" type="checkbox" />
             <ul className="sub-div">
               <li>
@@ -90,9 +96,11 @@ const Header = () => {
             </ul>
           </div>
           <div className="main-div">
-            <label htmlFor="css">
-              CSS <i className="fas fa-plus" />
-            </label>
+            <NavLink to="/css">
+              <label htmlFor="css">
+                CSS <i className="fas fa-plus" />
+              </label>
+            </NavLink>
             <input id="css" type="checkbox" />
             <ul className="sub-div">
               <li>
@@ -121,9 +129,11 @@ const Header = () => {
             </ul>
           </div>
           <div className="main-div">
-            <label htmlFor="js">
-              JavaScript <i className="fas fa-plus" />
-            </label>
+            <NavLink to="/javascript">
+              <label htmlFor="js">
+                JavaScript <i className="fas fa-plus" />
+              </label>
+            </NavLink>
             <input id="js" type="checkbox" />
             <ul className="sub-div">
               <li>
